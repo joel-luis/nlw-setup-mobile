@@ -1,6 +1,7 @@
+import 'lib/day.js'
+
 import { StatusBar } from 'react-native'
 import { Loading } from 'components/Loading'
-import { Home } from 'screens/Home'
 import {
   useFonts,
   Inter_400Regular,
@@ -8,6 +9,7 @@ import {
   Inter_700Bold,
   Inter_800ExtraBold,
 } from '@expo-google-fonts/inter'
+import { Routes } from 'routes'
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -23,7 +25,7 @@ export default function App() {
 
   return (
     <>
-      <Home />
+      <Routes />
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
